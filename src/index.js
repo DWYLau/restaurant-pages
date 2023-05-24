@@ -1,3 +1,3 @@
-function content() {
-  const content = document.getElementById("content");
-}
+import loadHome from "./home.js";
+
+loadHome();
