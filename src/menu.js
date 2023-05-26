@@ -1,12 +1,12 @@
 function createMenu() {
-  const content = document.getElementById("content");
+  let content = document.getElementById("content");
   const tabContent = document.createElement("div");
   tabContent.classList.add("tabcontent");
-  tabContent.id = "menu";
+  tabContent.setAttribute("id", "menu");
 
   const title = document.createElement("h1");
   title.innerHTML = "MENU";
-  title.classList.add("about");
+  title.classList.add("heading");
 
   content.appendChild(tabContent);
   tabContent.appendChild(title);

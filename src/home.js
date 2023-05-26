@@ -1,11 +1,11 @@
 function createHome() {
+  let content = document.getElementById("content");
   const tabContent = document.createElement("div");
   tabContent.classList.add("tabcontent");
-  tabContent.id = "home";
 
   const title = document.createElement("h1");
   title.innerHTML = "ABOUT";
-  title.classList.add("about");
+  title.classList.add("heading");
 
   const image = document.createElement("img");
   image.src = "./images/cooking.jpg";

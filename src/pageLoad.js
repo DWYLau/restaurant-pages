@@ -1,4 +1,5 @@
 import createHome from "./home.js";
+import createMenu from "./menu.js";
 
 function createHeader() {
   let body = document.querySelector(".body");
@@ -27,11 +28,32 @@ function createHeader() {
   header.appendChild(title);
   header.appendChild(list);
   body.appendChild(header);
+
+  home.addEventListener("click", function () {
+    removeContent();
+    createHome();
+  });
+
+  menu.addEventListener("click", function () {
+    removeContent();
+    createMenu();
+  });
+}
+
+function removeContent() {
+  let tabcontent = document.querySelector(".tabcontent");
+  if (tabcontent.parentNode) {
+    tabcontent.parentNode.removeChild(tabcontent);
+  }
 }
 
 function initialLoad() {
   createHeader();
-  createHome();
+  createHome(); // default load
 }
+
+// import all the "createPages" to this page.
+// create a clearContent function that clears content before creating a new page.
+// add event listeners to menu, about, contact
 
 export { initialLoad };
