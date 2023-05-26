@@ -1,14 +1,15 @@
 function createMenu() {
   const content = document.getElementById("content");
-  const box = document.createElement("div");
-  box.classList.add("box");
+  const tabContent = document.createElement("div");
+  tabContent.classList.add("tabcontent");
+  tabContent.id = "menu";
 
   const title = document.createElement("h1");
   title.innerHTML = "MENU";
   title.classList.add("about");
 
-  content.appendChild(box);
-  box.appendChild(title);
+  content.appendChild(tabContent);
+  tabContent.appendChild(title);
 }
 
 export default createMenu;

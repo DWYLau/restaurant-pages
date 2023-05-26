@@ -1,3 +1,3 @@
-import loadHome from "./home.js";
+import { initialLoad } from "./pageLoad.js";
 
-loadHome();
+initialLoad();
