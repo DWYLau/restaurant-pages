@@ -11,9 +11,9 @@ body {
 
 #menu {
   height: 80vh;
-  width: 80vw;
-  left: 200px;
-  font-size: 0.7em;
+  width: 60vw;
+  left: 400px;
+  font-size: 1em;
   justify-content: space-around;
 }
 
@@ -109,8 +109,25 @@ ul {
 .menu-image {
   display: block;
   width: 290px;
-  height: 220px;
+  height: 210px;
   border-radius: 15px;
+  border-bottom: 4px solid black;
+}
+
+.label {
+  font-family: "Samurai Warrior";
+  color: white;
+  font-size: 2.5em;
+  margin-top: -2.4rem;
+  padding-top: 5px;
+  height: 40px;
+  width: 290px;
+  background-color: black;
+  opacity: 0.9;
+  text-align: center;
+  position: relative;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
 }
 
 @keyframes shake {
