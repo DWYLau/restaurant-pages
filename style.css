@@ -130,6 +130,35 @@ ul {
   border-bottom-right-radius: 15px;
 }
 
+.phone {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: white;
+  height: 60px;
+  width: 250px;
+  border-radius: 20px;
+  margin: 10px;
+}
+
+.phoneImg {
+  position: relative;
+  z-index: 1;
+  height: 40px;
+  width: 40px;
+}
+
+.phoneNum {
+  font-size: 30px;
+}
+
+.map {
+  margin: 10px;
+  width: 500px;
+  height: 400px;
+  border-radius: 30px;
+}
+
 @keyframes shake {
   10%,
   90% {
