@@ -20,8 +20,6 @@ function createHome() {
   tabContent.appendChild(title);
   tabContent.appendChild(image);
   tabContent.appendChild(text);
-
-  return tabContent;
 }
 
 export default createHome;

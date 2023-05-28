@@ -1,5 +1,6 @@
 import createHome from "./home.js";
 import createMenu from "./menu.js";
+import createContact from "./contact.js";
 
 function createHeader() {
   let body = document.querySelector(".body");
@@ -38,6 +39,11 @@ function createHeader() {
     removeContent();
     createMenu();
   });
+
+  contact.addEventListener("click", function () {
+    removeContent();
+    createContact();
+  });
 }
 
 function removeContent() {
@@ -51,9 +57,5 @@ function initialLoad() {
   createHeader();
   createHome(); // default load
 }
-
-// import all the "createPages" to this page.
-// create a clearContent function that clears content before creating a new page.
-// add event listeners to menu, about, contact
 
 export { initialLoad };
